@@ -30,10 +30,10 @@ class JsonValidator extends Validator
         parent::init();
 
         if ($this->notStringMsg === null)
-            $this->notStringMsg = Yii::t('app', 'The value must be a string.');
+            $this->notStringMsg = Yii::t('app', '{attribute} must be a string.');
 
         if ($this->invalidJsonMsg === null)
-            $this->invalidJsonMsg = Yii::t('app', 'The value must be a valid JSON string. {extendedMessage}.');
+            $this->invalidJsonMsg = Yii::t('app', '{attribute} must be a valid JSON string. {extendedMessage}.');
     }
 
     /**
